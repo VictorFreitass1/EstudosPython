@@ -2,6 +2,11 @@
 
 import random
 
+def jogar():
+    print("***************************************")
+    print("***Bem vindo no jogo de blackjack!***")
+    print("***************************************")
+
 suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
 ranks = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace')
 values = {'Two': 2, 'Three': 3, 'Four': 4, 'Five': 5, 'Six': 6, 'Seven': 7, 'Eight': 8,
@@ -217,3 +222,6 @@ while True:
     else:
         print("\nObrigado por jogar!")
         break
+
+if(__name__ == "__main__"):
+    jogar()
