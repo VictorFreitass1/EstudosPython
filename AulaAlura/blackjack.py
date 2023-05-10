@@ -66,7 +66,7 @@ class Hand:   # show all the cards that the dealer and player have
 class Chips:   # keep track of chips
 
     def __init__(self):
-        self.total = 100
+        self.total = 1000
         self.bet = 0
 
     def win_bet(self):
@@ -87,7 +87,7 @@ def take_bet(chips):  # ask for user's bet
             print("Desculpe! Por favor, você pode digitar um número: ")
         else:
             if chips.bet > chips.total:
-                print("Você aposta não pode exceder 100! ")
+                print("Você aposta não pode exceder 1000! ")
             else:
                 break
 
